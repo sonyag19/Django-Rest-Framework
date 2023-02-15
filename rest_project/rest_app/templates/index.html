@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>User ID</th>
+        <th>Title</th>
+        <th>Status</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.userId}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.completed}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
